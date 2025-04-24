@@ -171,3 +171,75 @@ data and MRI image features.
 
 
 
+
+
+
+
+Example Form Input for Non-Demented Prediction:
+
+Field      	Value      	Notes
+MR Delay	  5	          Shorter delay in days
+M/F	        0	          1 = Male, 0 = Female
+Age	        60	        Younger age reduces risk
+EDUC	      16	        Higher years of education
+SES	        3	          Socioeconomic Status (3 = high)
+MMSE	      29	        Higher MMSE score (closer to 30) indicates normal cognitive function
+CDR	        0.0	        Clinical Dementia Rating (0.0 = no dementia)
+eTIV	      1500	      Normal estimated intracranial volume
+nWBV	      0.75	      Normalized whole brain volume
+ASF	        1.0	        Normalized Atlas scaling factor
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example Form Input for Demented Prediction:
+
+Field	        Value	        Notes
+MR Delay    	10	          Delay in days
+M/F	          1	            1 = Male, 0 = Female
+Age	          87	          Older age increases risk
+EDUC	        12	          Years of education
+SES	          1	            Socioeconomic Status (1 = low)
+MMSE	        15	          Lower scores indicate cognitive decline
+CDR	          1.0	          Clinical Dementia Rating (1.0 = clear dementia)
+eTIV	        1400	        Estimated intracranial volume
+nWBV	        0.66	        Normalized whole brain volume
+ASF	          1.2	          Atlas scaling factor
+
+
+
+
+
+
+
+
+
+
+
+
+Download it and run with
+
+-> python app.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
